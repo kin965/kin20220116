@@ -1,102 +1,71 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package obj;
-
-/**
- *
- * @author jinch
- */
+package kin;
 public class JobInfo {
+	public JobInfo() {
+		
+	}
+//社名
+	private String companyName;
+//仕事名
+	private String jobName;
+//所在地
+	private String address;
+//駅
+	private String station;
+//給料
+	private String salaryLimit;
 
-    public JobInfo() {
+	private String treatment;
 
-    }
+	public String getTreatment() {
+		return treatment;
+	}
 
-    private String companyName;
+	public void setTreatment(String treatment) {
+		this.treatment = treatment;
+	}
 
-    private String jobName;
+	public String getSalaryLimit() {
+		return salaryLimit;
+	}
 
-    private String address;
+	public void setSalaryLimit(String salaryLimit) {
+		this.salaryLimit = salaryLimit;
+	}
 
-    private String station;
+	public String getCompanyName() {
+		return companyName;
+	}
 
-    private String salaryLimit;
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
 
-    private String stock;
+	public String getJobName() {
+		return jobName;
+	}
 
-    public void setStock(String stock) {
-        this.stock = stock;
-    }
+	public void setJobName(String jobName) {
+		this.jobName = jobName;
+	}
 
-    public String getStock() {
-        return stock;
-    }
+	public String getAddress() {
+		return address;
+	}
 
-    public String getSalaryLimit() {
-        return salaryLimit;
-    }
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-    public void setSalaryLimit(String salaryLimit) {
-        this.salaryLimit = salaryLimit;
-    }
+	public String getStation() {
+		return station;
+	}
 
-    /**
-     * @return the companyName
-     */
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    /**
-     * @param companyName the companyName to set
-     */
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
-
-    /**
-     * @return the jobName
-     */
-    public String getJobName() {
-        return jobName;
-    }
-
-    /**
-     * @param jobName the jobName to set
-     */
-    public void setJobName(String jobName) {
-        this.jobName = jobName;
-    }
-
-    /**
-     * @return the address
-     */
-    public String getAddress() {
-        return address;
-    }
-
-    /**
-     * @param address the address to set
-     */
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    /**
-     * @return the station
-     */
-    public String getStation() {
-        return station;
-    }
-
-    /**
-     * @param station the station to set
-     */
-    public void setStation(String station) {
-        this.station = station;
-    }
+	public void setStation(String station) {
+		this.station = station;
+	}
+//	   @Override
+//	    public String toString() {
+//	        return jobName+companyName+address+salaryLimit;
+//	    }
 
 }
